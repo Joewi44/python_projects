@@ -1,0 +1,192 @@
+{
+    "WEGKENMERKEN": {
+        "erf": {
+            "K_visueel": 1.0,
+            "K_structureel": 1.2,
+            "T": 0.0
+        },
+        "verzamel": {
+            "K_visueel": 1.25,
+            "K_structureel": 1.5,
+            "T": 0
+        },
+        "doorgang": {
+            "K_visueel": 1.35,
+            "K_structureel": 1.62,
+            "T": 0.0
+        }
+    },
+    "ROAD_DATA": {
+        "asfalt": {
+            "B_visueel_standaard": 0.02,
+            "B_structureel_standaard": 0.02,
+            "B_visueel_na_onderhoud": {
+                "routine": 0.02,
+                "lokaal": 0.055,
+                "algemeen_v1": 0.04,
+                "algemeen_v2": 0.03,
+                "algemeen_v3": 0.03,
+                "versterking_v1": 0.028,
+                "versterking_v2": 0.02,
+                "versterking_v3": 0.02
+            },
+            "leeftijd": 25
+        },
+        "beton": {
+            "B_visueel_standaard": 0.013,
+            "B_structureel_standaard": 0.013,
+            "B_visueel_na_onderhoud": {
+                "routine": 0.013,
+                "lokaal": 0.033,
+                "algemeen_v1": 0.026,
+                "algemeen_v2": 0.026,
+                "algemeen_v3": 0.026,
+                "versterking_v1": 0.013,
+                "versterking_v2": 0.013,
+                "versterking_v3": 0.013
+            },
+            "leeftijd": 40
+        },
+        "elementen": {
+            "B_visueel_standaard": 0.016,
+            "B_structureel_standaard": 0.016,
+            "B_visueel_na_onderhoud": {
+                "routine": 0.016,
+                "lokaal": 0.016,
+                "algemeen_v1": 0.016,
+                "algemeen_v2": 0.016,
+                "algemeen_v3": 0.016,
+                "versterking_v1": 0.016,
+                "versterking_v2": 0.016,
+                "versterking_v3": 0.016
+            },
+            "leeftijd": 30
+        }
+    },
+    "MAATREGEL_MAPPING": {
+        "asfalt": {
+            "lokaal": {
+                "naam": "Asfalt_Plaatselijke_reparatie",
+                "prijs": 5.4
+            },
+            "algemeen_v1": {
+                "naam": "Asfalt_Eenlaagse_bestrijking",
+                "prijs": -1.0
+            },
+            "algemeen_v2": {
+                "naam": "Asfalt_Tweelaagse_slem",
+                "prijs": -1.0
+            },
+            "algemeen_v3": {
+                "naam": "Asfalt_Dunne_overlaag_3cm",
+                "prijs": 50.0
+            },
+            "versterking_v1": {
+                "naam": "Asfalt_Asfaltverniewing_10cm",
+                "prijs": -1.0
+            },
+            "versterking_v2": {
+                "naam": "Asfalt_Asfaltverniewing_16cm",
+                "prijs": -1.0
+            },
+            "versterking_v3": {
+                "naam": "Asfalt_Nieuwe_constructie",
+                "prijs": 118
+            }
+        },
+        "beton": {
+            "lokaal": {
+                "naam": "Beton_Plaatselijke_reparatie",
+                "prijs": 4.9
+            },
+            "algemeen_v1": {
+                "naam": "Beton_N/A",
+                "prijs": -1.0
+            },
+            "algemeen_v2": {
+                "naam": "Beton_N/A",
+                "prijs": -1.0
+            },
+            "algemeen_v3": {
+                "naam": "Beton_Vervangen_betonplaat_20cm",
+                "prijs": 87.0
+            },
+            "versterking_v1": {
+                "naam": "Beton_Stabiliseren_en_overlagen_asfal",
+                "prijs": -1.0
+            },
+            "versterking_v2": {
+                "naam": "Beton_Vervangen_deklaag_betonplate",
+                "prijs": -1.0
+            },
+            "versterking_v3": {
+                "naam": "Beton_Nieuwe_constructie",
+                "prijs": 145.0
+            }
+        },
+        "elementen": {
+            "lokaal": {
+                "naam": "Elementen_Plaatselijke_reparatie",
+                "prijs": 10.4
+            },
+            "algemeen_v1": {
+                "naam": "Elementen_N/A",
+                "prijs": -1.0
+            },
+            "algemeen_v2": {
+                "naam": "Elementen_N/A",
+                "prijs": -1.0
+            },
+            "algemeen_v3": {
+                "naam": "Elementen_EA1_Volledig_herstraten",
+                "prijs": 99.0
+            },
+            "versterking_v1": {
+                "naam": "Elementen_N/A",
+                "prijs": -1.0
+            },
+            "versterking_v2": {
+                "naam": "Elementen_N/A",
+                "prijs": -1.0
+            },
+            "versterking_v3": {
+                "naam": "Elementen_Nieuwe_constructie",
+                "prijs": 140.0
+            }
+        }
+    },
+    "KWALITEITSINDEX": {
+        "Zeer goed < 0.9": {
+            "max": 0.9,
+            "min": 0.8
+        },
+        "Goed < 0.8": {
+            "max": 0.8,
+            "min": 0.75
+        },
+        "Acceptable < 0.75": {
+            "max": 0.75,
+            "min": 0.5
+        },
+        "Matig < 0.5": {
+            "max": 0.5,
+            "min": 0.45
+        },
+        "Slecht < 0.45": {
+            "max": 0.45,
+            "min": 0.3
+        },
+        "Onaanvaardbaar < 0.3": {
+            "max": 0.3,
+            "min": 0.0
+        }
+    },
+    "ECONOMIE": {
+        "standaard_r": 0.1,
+        "standaard_i": 0.05,
+        "standaard_sigma": 0.08,
+        "uitgebreid_r": 0.04,
+        "uitgebreid_i": 0.03,
+        "uitgebreid_sigma": 0.09
+    }
+}

@@ -1,0 +1,39 @@
+name: python_projects_ocw_project
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python
+  - pip>=19.0
+  - scipy
+  - pandas
+  - geopandas
+  - pandas-datareader
+  - matplotlib
+  - setuptools
+  - panel
+  - fastparquet
+  - pyarrow
+  - hvplot
+  - folium
+  - pyproj
+  - shapely
+  - pyogrio
+  - bokeh
+  - tornado
+  - ipywidgets
+  - jupyter_bokeh
+  - pyviz_comms
+  - pip:
+      - plotly
+      - numpy
+
+#conda env create -f /Users/uwev/PycharmProjects/python_projects/ocw_project/requirements.yaml
+
+# To activate this environment, use
+#
+#     $ conda activate python_projects_ocw_project
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
